@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "HomeKept",
+    "slug": "homekept",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "homekept",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#22331F",
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ahmadessam.homekept"
+    },
+    "android": {
+      "package": "com.ahmadessam.homekept",
+      "adaptiveIcon": {
+        "backgroundColor": "#22331F",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "color": "#22331F"
+        }
+      ],
+      "@react-native-google-signin/google-signin"
+    ],
+    "icon": "./assets/icon.png"
+  }
+}

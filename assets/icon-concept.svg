@@ -1,0 +1,11 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1024" height="1024" rx="230" fill="#22331F"/>
+  <!-- house body -->
+  <path d="M312 512 L512 340 L712 512 L712 720 Q712 744 688 744 L336 744 Q312 744 312 720 Z"
+        fill="none" stroke="#F7F3EC" stroke-width="48" stroke-linejoin="round"/>
+  <!-- roofline continuing into a checkmark -->
+  <path d="M232 560 L392 420 L560 588 L788 300"
+        fill="none" stroke="#F7F3EC" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- ember tip on the check -->
+  <circle cx="788" cy="300" r="40" fill="#D97B29"/>
+</svg>
