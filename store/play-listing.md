@@ -40,9 +40,16 @@ cancel anytime.
 
 Five questions now. A calmer, better-kept home all year.
 
-## Screenshot captions (rendered into play-assets/screenshot-1..6.png)
-1. YOUR HOME, ON SCHEDULE · 2. KNOW WHAT TO DO — AND WHY · 3. TRACK WHAT UPKEEP COSTS
-4. SEE SPENDING AT A GLANCE · 5. BUILD A LOGBOOK FOR RESALE DAY · 6. 5 QUESTIONS. DONE IN A MINUTE.
+## Screenshot captions (rendered into play-assets/screenshot-1..7.png)
+Reshot 2026-07-28 from the real app on the emulator, after sign-in became
+mandatory. Upload in this order — the first one is what most people see.
+1. YOUR HOME, ON SCHEDULE
+2. KNOW WHAT TO DO — AND WHY
+3. TRACK WHAT UPKEEP COSTS
+4. SEE SPENDING AT A GLANCE
+5. A LOGBOOK FOR RESALE DAY
+6. START FREE IN SECONDS          (the sign-in gate — new)
+7. 14 DAYS FREE, THEN $24.99/YEAR (the paywall, so pricing is visible up front)
 
 ## Play Console answers
 - **Category:** House & Home (or Lifestyle)
@@ -61,10 +68,11 @@ Five questions now. A calmer, better-kept home all year.
   NO card, so configure the Play subscriptions WITHOUT an extra intro trial.
 
 ## Asset inventory
-- `play-assets/screenshot-1..6.png` — 1080×1920 framed shots (REAL app captures
-  from the web build e2e run) · `feature-graphic.png` 1024×500
+- `play-assets/screenshot-1..7.png` — 1080×1920 framed shots (REAL captures from
+  the Android emulator, 2026-07-28) · `feature-graphic.png` 1024×500
 - `play-assets/play-icon-512.png`, `icon-1024.png` — house + gold checkmark
-- `play-assets/raw/` — unframed captures (incl. paywall.png, auth.png)
+- `play-assets/raw/` — unframed 1080×2400 captures (dashboard, task-expanded,
+  cost-modal, spending, history, auth, paywall, settings)
 
 ## Remaining blockers before submission
 1. Supabase keys in `lib/auth.js`. No longer optional: sign-in is mandatory, and
@@ -79,7 +87,8 @@ Five questions now. A calmer, better-kept home all year.
    the account-deletion URL above.
 6. Closed test (12+ testers / 14 days) for a personal account.
 
-## Screenshots need reshooting
-`play-assets/screenshot-1..6.png` were captured before sign-in became mandatory,
-so none of them shows the first screen a new user now sees. Add a sign-in shot
-(or replace one) before submitting, so the listing matches the install.
+## Screenshot note
+Done. The set now leads with the schedule and includes both the sign-in gate and
+the paywall, so the listing matches what a new user actually gets. The captures
+are from a dev build, so the dev-only "simulated billing" / "dev mode" notices
+were cropped out — reshoot from a production build if you want them frame-exact.
