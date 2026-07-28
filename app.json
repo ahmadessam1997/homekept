@@ -33,6 +33,13 @@
       ],
       "@react-native-google-signin/google-signin"
     ],
-    "icon": "./assets/icon.png"
+    "icon": "./assets/icon.png",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "20fbe9f7-d578-4d4a-b135-fec04632506d"
+      }
+    },
+    "owner": "ahmadessam1997"
   }
 }
