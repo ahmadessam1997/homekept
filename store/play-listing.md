@@ -63,9 +63,13 @@ mandatory. Upload in this order — the first one is what most people see.
   release gets rejected.
 - **Account deletion URL:** REQUIRED for any app with accounts. Play needs a
   publicly reachable web page to request deletion; in-app sign-out is not enough.
-- **In-app products:** subscription `homekept_monthly` $3.99/mo,
-  `homekept_yearly` $24.99/yr — the 14-day free trial is handled in-app with
-  NO card, so configure the Play subscriptions WITHOUT an extra intro trial.
+- **In-app products:** ONE subscription `homekept_plus` with two base plans —
+  `monthly` $3.99/mo and `annual` $24.99/yr. (An earlier draft of this file said
+  two separate products `homekept_monthly`/`homekept_yearly`; that is wrong and
+  does not match `lib/billing.js`, which maps RevenueCat packages `$rc_monthly`
+  and `$rc_annual` onto the `plus` entitlement. GO-LIVE.md is authoritative.)
+  The 14-day free trial is handled in-app with NO card, so configure both base
+  plans WITHOUT an intro/free-trial offer.
 
 ## Asset inventory
 - `play-assets/screenshot-1..7.png` — 1080×1920 framed shots (REAL captures from

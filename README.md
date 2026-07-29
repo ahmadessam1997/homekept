@@ -71,10 +71,11 @@ lib/entitlement.js   14-day trial clock + access gate
 - A **trial banner** on the dashboard counts down and upsells early.
 - "Reset all data" in Settings does **not** restart the trial (trial keys are
   stored separately from app data).
-- Local trial state is wiped on uninstall — that's fine, because in production
-  the store subscription itself carries a **14-day free trial offer** which
-  Google/Apple enforce **once per store account**. Reinstalling can re-lock the
-  app but can never grant a second free trial.
+- Local trial state is wiped on uninstall. Reinstalling therefore *can* grant a
+  fresh 14 days on the same device — an accepted trade. Do **not** "fix" this by
+  adding a free-trial offer to the Play subscription: the 14 days are granted
+  in-app before the paywall is ever shown, so a store trial on top would hand new
+  users 28 free days. See the store-products step in the checklist below.
 
 ### Going live checklist
 
