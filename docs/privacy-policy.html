@@ -22,7 +22,7 @@
 </head>
 <body>
   <h1>Privacy Policy — HomeKept</h1>
-  <p class="muted">Last updated: 28 July 2026</p>
+  <p class="muted">Last updated: 2 October 2026</p>
 
   <p>
     HomeKept ("the app", package <code>com.ahmadessam.homekept</code>) is
@@ -31,10 +31,18 @@
 
   <p>
     <strong>Your home data never leaves your phone.</strong> Your home profile,
-    your task schedule, your completion history and every cost you record are
-    stored only in the app's local storage on your device. They are not uploaded,
-    backed up to us, or shared. The only personal data that leaves your device is
-    your email address, used to sign in and to attach your subscription to you.
+    your task schedule, your own custom tasks, your completion history, every
+    cost you record, and the appliances, warranty dates and photos in your
+    vault are stored only in the app's local storage on your device. They are
+    not uploaded, backed up to us, or shared.
+  </p>
+
+  <p>
+    <strong>You do not need an account to use HomeKept.</strong> The app starts
+    with a 7-day free trial and no sign-up. An account (email address) is only
+    created if you choose to subscribe, so that your subscription stays with
+    you if you change phones. The app shows <strong>no advertising</strong>.
+    It does send anonymous usage statistics, described below.
   </p>
 
   <h2>What we collect</h2>
@@ -43,8 +51,9 @@
     <tr><th>Data</th><th>Why</th><th>Who handles it</th></tr>
     <tr>
       <td>Email address</td>
-      <td>To create your account, sign you in, and keep your subscription with
-          you if you change phones.</td>
+      <td>Only if you create an account, which is needed only to subscribe:
+          to sign you in and keep your subscription with you if you change
+          phones.</td>
       <td>Supabase (authentication provider, acting as our processor)</td>
     </tr>
     <tr>
@@ -65,8 +74,25 @@
       <td>Google Play and RevenueCat (billing processor)</td>
     </tr>
     <tr>
-      <td>Home profile, tasks, history, costs</td>
-      <td>To build and keep your maintenance schedule.</td>
+      <td>Usage statistics: which screens and features are used (for example
+          "a task was marked done", "the vault was used", "the subscription
+          screen was shown"), together with an app-instance identifier, your
+          device model, Android version, app version, language and approximate
+          country (derived from your IP address, which is not stored)</td>
+      <td>To understand which parts of the app are used and to fix what is
+          not working. These events never contain task names, costs, notes,
+          photos, your email address or anything else you type.</td>
+      <td>Google Analytics for Firebase (Google, acting as our processor)</td>
+    </tr>
+    <tr>
+      <td>Home profile, tasks, custom tasks, history, costs, appliance and
+          warranty records, vault photos</td>
+      <td>To build and keep your maintenance schedule and records.</td>
+      <td><strong>Nobody — this stays on your device.</strong></td>
+    </tr>
+    <tr>
+      <td>Free-trial start date</td>
+      <td>To know when your 7-day trial ends.</td>
       <td><strong>Nobody — this stays on your device.</strong></td>
     </tr>
   </table>
@@ -74,9 +100,13 @@
   <h2>What we do not do</h2>
   <ul>
     <li>We do not sell or rent your data to anyone.</li>
-    <li>We do not use advertising or advertising identifiers.</li>
+    <li>We do not show advertising, and we do not collect the Android
+        advertising ID: the app does not request the advertising-ID
+        permission, and advertising-ID collection and ad-personalisation
+        signals are switched off in our analytics configuration.</li>
     <li>We do not collect your location.</li>
-    <li>We do not track you across other apps or websites.</li>
+    <li>We do not track you across other apps or websites, and usage
+        statistics are not used for advertising.</li>
     <li>We do not read the contents of your home profile or spending — it is not
         transmitted to us in the first place.</li>
   </ul>
@@ -89,9 +119,32 @@
     settings at any time and the rest of the app keeps working.
   </p>
 
+  <h2>Camera and photos</h2>
+  <p>
+    The appliance and warranty vault lets you attach a photo to an item. The
+    camera is used only when you tap "Take photo", and Android asks for your
+    permission first; you can also pick an existing photo, which needs no
+    permission. The photo is copied into the app's private storage on your
+    device and is never uploaded. Files you export (CSV) go only where you
+    choose to send them through Android's share sheet.
+  </p>
+
+  <h2>Usage statistics (analytics)</h2>
+  <p>
+    HomeKept uses Google Analytics for Firebase to count how the app is used.
+    The identifier involved is an app-instance ID created by Firebase for this
+    installation; it is reset if you reinstall the app or clear its data, and
+    we do not link it to your account or email address. Google processes this
+    data under the
+    <a href="https://firebase.google.com/support/privacy">Firebase privacy and
+    security terms</a>. Analytics data is retained for
+    2 to 14 months depending on our Google Analytics setting, and is then deleted
+    automatically.
+  </p>
+
   <h2>How long we keep it</h2>
   <p>
-    Your account record is kept for as long as your account exists. If you delete
+    If you have an account, its record is kept for as long as the account exists. If you delete
     your account, the account record and its email address are removed from our
     authentication provider. Records of purchases are retained by Google Play and
     RevenueCat under their own policies, because we are required to keep proof of
@@ -117,6 +170,7 @@
   <ul>
     <li><strong>Supabase</strong> — authentication (stores your email and password hash).</li>
     <li><strong>RevenueCat</strong> — subscription status.</li>
+    <li><strong>Google Analytics for Firebase</strong> — anonymous usage statistics.</li>
     <li><strong>Google Play Billing</strong> — payment processing. We never see your card details; billing is handled entirely by Google.</li>
   </ul>
 
